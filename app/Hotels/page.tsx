@@ -9,7 +9,7 @@ type Hotels = {
     name: string,
     address: string,
     city: string,
-    featuredImage: any,
+    featuredImage: string,
     rooms: []
 }
 
@@ -25,7 +25,7 @@ export default function Hotels() {
         );
         const citiesData = await citiesResponse.json();
         setCities(citiesData);
-
+        cities;
         const hotelsResponse = await fetch("https://hotelbooking.stepprojects.ge/api/Hotels/GetHotels?city=Tbilisi");
         const hotelsData = await hotelsResponse.json();
         setHotels(hotelsData);

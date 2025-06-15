@@ -15,8 +15,8 @@ type Hotel = {
   bookedDates: [];
   images: [
     id:number,
-    roomId: number,
-    source: any
+    source: string,
+    roomId: number
   ]
 };
 

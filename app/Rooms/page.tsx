@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "./Rooms.module.css";
-import axios from "axios";
 
 type Rooms = {
   id: number;
@@ -12,7 +11,7 @@ type Rooms = {
   maximumGuests: number;
   roomTypeId: number;
   bookedDates: [];
-  images: [id: number, roomId: number, source: any];
+  images: [id: number, roomId: number, source: string];
 };
 type RoomsType = { id: number; name: string };
 export default function Rooms() {
@@ -48,7 +47,7 @@ export default function Rooms() {
     };
     fetchRooms();
   });
-  const handleRoomTypeClick = (roomType: any) => {
+  const handleRoomTypeClick = (roomType: number) => {
     setSelectedRoomType(roomType);
   };
   const filteredRooms =

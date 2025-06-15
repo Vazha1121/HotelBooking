@@ -6,7 +6,6 @@ import { FaGlassMartini } from "react-icons/fa";
 import { CiCreditCard1 } from "react-icons/ci";
 import { MdOutlineRestaurant } from "react-icons/md";
 import { FaDroplet } from "react-icons/fa6";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export default function Home() {
   const myIcons = [
@@ -63,7 +62,7 @@ export default function Home() {
           <button>SEE HOTELS</button>
         </div>
       </section>
-      /* sect2 */
+      {/* sect 2 */}
       <section className={styles.sect2}>
         <div className={styles.d1}>
           <div className={styles.titleDiv}>
