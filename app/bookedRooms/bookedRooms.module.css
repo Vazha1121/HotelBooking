@@ -1,0 +1,48 @@
+.bookedSect {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookedSect table thead tr {
+  border: 1px solid black;
+}
+.bookedSect table thead tr th {
+  text-align: start;
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+.bookedSect table thead tr td {
+  border-bottom: 1px solid black;
+  padding-block: 20px;
+}
+.bookedSect table thead tr td .imgTd {
+  display: flex;
+  gap: 10px;
+}
+.bookedSect table thead tr td .imgTd img {
+  border: 1px solid red;
+  border-radius: 20px;
+}
+.bookedSect table thead tr td .imgTd div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bookedSect table td {
+  border-bottom: 1px solid black;
+}
+.bookedSect table button {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ba3535;
+  transition: 0.2s;
+}
+.bookedSect table button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=bookedRooms.module.css.map */

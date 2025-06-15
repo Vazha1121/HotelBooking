@@ -1,0 +1,53 @@
+.bookedSect {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  table {
+    thead {
+      tr {
+        border: 1px solid black;
+        th {
+          text-align: start;
+          border-bottom: 1px solid black;
+          padding: 20px;
+        }
+        td {
+          border-bottom: 1px solid black;
+          padding-block: 20px;
+          .imgTd {
+            display: flex;
+            gap: 10px;
+            img {
+              border: 1px solid red;
+              border-radius: 20px;
+            }
+            div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+    td{
+      border-bottom: 1px solid black;
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #ba3535;
+      transition: 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+  }
+}

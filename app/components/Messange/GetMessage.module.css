@@ -1,0 +1,60 @@
+.section {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+.section .cardDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+.section .cardDiv .cards {
+  width: 400px;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid rgb(206, 206, 206);
+  position: relative;
+}
+.section .cardDiv .cards img {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.section .cardDiv .cards .infoDiv {
+  color: black;
+  height: 24px;
+  font-size: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 1px solid rgb(206, 206, 206);
+  border-right: 1px solid rgb(206, 206, 206);
+  transition: 0.2s;
+}
+.section .cardDiv .cards button {
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgb(206, 206, 206);
+  background-color: #75c5cf;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(60px);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.section .cardDiv .cards:hover img {
+  transform: translateY(-60px);
+}
+.section .cardDiv .cards:hover .infoDiv {
+  transform: translateY(-60px);
+}
+.section .cardDiv .cards:hover button {
+  transform: translateY(0px);
+}/*# sourceMappingURL=GetMessage.module.css.map */
